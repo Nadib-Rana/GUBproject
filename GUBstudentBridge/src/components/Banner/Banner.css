@@ -1,5 +1,5 @@
 .food-banner {
-    width: 100%;
+    max-width:1432px;
     height: 482px;
     display: flex;
     align-items: center;
@@ -10,8 +10,8 @@
     position: relative;
   }
   
-  .food-banner h1 {
-    font-size: 3em;
+  .food-banner-titel{
+    font-size: 60px;
     margin: 0;
   }
   
