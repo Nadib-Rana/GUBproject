@@ -1,0 +1,22 @@
+.food-banner {
+    width: 100%;
+    height: 482px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DAF9D6;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .food-banner h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .food-banner p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+  }
+  
