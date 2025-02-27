@@ -1,8 +1,17 @@
+# Project Setup (From Scratch)
+
+This document outlines the steps to set up the GUB project from scratch.
+
+## Prerequisites
+
+- [ ] Install [Node.js](https://nodejs.org/)
+- [ ] Install [Git](https://git-scm.com/)
+
 ## Steps
 
-### 1. Create a new Vite project
+### 1. Clone the repository
     ```sh
-    npm create vite@latest GUBproject
+    git clone https://github.com/yourusername/GUBproject.git
     cd GUBproject
     ```
 
@@ -16,12 +25,15 @@
 
 ### 4. Run the project
     ```sh
-    npm run dev
+    npm start
     ```
 
-## 4. Install Router 
-   ``sh
-      npm install react-router-dom@latest
-    ``
+## Additional Resources
 
+- [Project Documentation](link-to-documentation)
+- [Contribution Guidelines](link-to-contribution-guidelines)
+
+## Troubleshooting
+
+- If you encounter any issues, refer to the [FAQ](link-to-faq) or open an issue on GitHub.
 
