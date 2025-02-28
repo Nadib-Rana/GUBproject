@@ -1,22 +1,74 @@
+/* Dynamic Food Showcase Banner */
 .food-banner {
-    max-width:1432px;
-    height: 482px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #DAF9D6;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-  }
-  
-  .food-banner-titel{
-    font-size: 60px;
-    margin: 0;
-  }
-  
-  .food-banner p {
-    font-size: 1.5em;
-    margin: 10px 0 0;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DAF9D6;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  width: 120%;
+  height: 482px;
+
+}
+
+.food-banner-left {
+  width: 50%;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.food-banner-title {
+  font-size: 3rem;
+  color: #333;
+  font-family: 'Monoton', cursive;
+}
+
+.food-banner-description {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.cta-button {
+  background-color: #ca2617;
+  border-radius: 20px;
+  color: #c0d4c1;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #06a944;
+  transform: scale(1.1); /* Zoom in */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  border-radius: 20px;
+  color: #e7e3e2;
+}
+
+.cta-button:active {
+  transform: scale(0.95); /* Zoom out when clicked */
+}
+
+.food-banner-right {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-banner-right img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  transform: rotate(-10deg);
+  transition: transform 0.5s ease;
+}
+
+.food-banner-right img:hover {
+  transform: scale(1.1);
+}
