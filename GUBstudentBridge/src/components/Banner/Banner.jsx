@@ -14,7 +14,7 @@ export const Banner = () => {
         <p className="food-banner-description">
           Experience delicious dishes, fresh ingredients, and culinary delights.
         </p>
-        <button className="cta-button">Order Now</button>
+        <button className="cta-button">Explore Foods </button>
       </div>
       <div className="food-banner-right">
         <img src={lunchFood} alt="Lunch Food Canteen" />

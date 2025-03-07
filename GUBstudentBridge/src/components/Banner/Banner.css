@@ -1,45 +1,51 @@
 /* Dynamic Food Showcase Banner */
 .food-banner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: #DAF9D6;
-  padding: 2rem;
-  position: relative;
+  background-color: #123524;
   overflow: hidden;
-  width: 120%;
-  height: 482px;
-
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .food-banner-left {
-  width: 50%;
+  margin-left: 30px;
+  width: 60%;
   z-index: 2;
   opacity: 0.9;
 }
 
 .food-banner-title {
-  font-size: 3rem;
-  color: #333;
-  font-family: 'Monoton', cursive;
+  font-size: 64px;
+  color: #3DD22C;
+  font-family: 'Moul', cursive;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+
 .food-banner-description {
-  font-size: 1.2rem;
+  font-size: 32px;
+  font-family: 'monda', sans-serif;
   margin-bottom: 1rem;
-  color: #555;
+  color: #555555;
 }
 
 .cta-button {
-  background-color: #ca2617;
+  background-color: transparent;
   border-radius: 20px;
-  color: #c0d4c1;
+  color: #EFE3C2;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border: 2px solid #2F4F2F;
 }
 
 .cta-button:hover {
@@ -55,7 +61,7 @@
 }
 
 .food-banner-right {
-  width: 45%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,12 +69,91 @@
 
 .food-banner-right img {
   width: 120px;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
   transform: rotate(-10deg);
   transition: transform 0.5s ease;
+  border: 2.5px solid #2F4F2F;
+  border-radius: 5px;
 }
 
 .food-banner-right img:hover {
   transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .food-banner {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .food-banner-left,
+  .food-banner-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .food-banner-right {
+    margin-top: 1rem;
+  }
+
+  .food-banner-right img {
+   display: none;
+  }
+
+  .food-banner-title {
+    font-size: 48px;
+  }
+
+  .food-banner-description {
+    font-size: 24px;
+  }
+
+  .cta-button {
+    font-size: 24px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .food-banner-left {
+    margin-left: 0;
+  }
+
+  .food-banner-title {
+    font-size: 36px;
+  }
+
+  .food-banner-description {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    font-size: 20px;
+    padding: 6px 12px;
+  }
+
+  .food-banner-right img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .food-banner-title {
+    font-size: 28px;
+  }
+
+  .food-banner-description {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  .food-banner-right img {
+ display: none;
+  }
 }
