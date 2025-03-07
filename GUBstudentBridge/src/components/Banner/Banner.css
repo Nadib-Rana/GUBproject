@@ -1,5 +1,8 @@
-/* Dynamic Food Showcase Banner */
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+
 .food-banner {
+  position: relative;
+  margin: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,15 +22,12 @@
   z-index: 2;
   opacity: 0.9;
 }
-
-.food-banner-title {
+.food-banner-titel {
   font-size: 64px;
-  color: #3DD22C;
-  font-family: 'Moul', cursive;
+  font-family: 'montagu slab', serif;
+  margin-bottom: 1rem;
+  color: #EFE3C2;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
-
 .food-banner-description {
   font-size: 32px;
   font-family: 'monda', sans-serif;
@@ -99,7 +99,8 @@
   }
 
   .food-banner-right img {
-   display: none;
+    width: 100px;
+    height: 180px;
   }
 
   .food-banner-title {
@@ -111,8 +112,7 @@
   }
 
   .cta-button {
-    font-size: 24px;
-    padding: 8px 16px;
+   display: none;
   }
 }
 

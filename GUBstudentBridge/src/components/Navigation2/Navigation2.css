@@ -1,0 +1,48 @@
+.navigation2 {
+    width: 100%;
+    background-color: #f4f4f9;
+  }
+  
+  .navigation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .cart-icon, .filter-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .menu li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: #123524;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu li:hover {
+    background-color: #06a944;
+  }
+  
+  .menu-content {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+  }
