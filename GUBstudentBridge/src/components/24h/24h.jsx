@@ -2,7 +2,7 @@ import React from 'react';
 import './24h.css';
 import data24h from './24hData';
 
-const TwentyFourH = ({ searchTerm }) => {
+const TwentyFourH = ({ searchTerm, addToCart }) => {
   const filteredData = data24h.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -22,12 +22,11 @@ const TwentyFourH = ({ searchTerm }) => {
             <p className="stock">
               {item.stock > 1 ? `In stock (${item.stock})` : <span style={{color:'red'}}>Stock out</span>}
             </p>
-            <a href="#" className="btn">Order Now</a>
+            <button onClick={() => addToCart(item)} className="btn">Order Now</button>
           </div>
         </div>
       ))}
     </div>
   );
 };
-
 export default TwentyFourH;

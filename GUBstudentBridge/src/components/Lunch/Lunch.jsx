@@ -2,7 +2,7 @@ import React from 'react';
 import LunchMenu from './LunchData';
 import './Lunch.css';
 
-const Lunch = ({ searchTerm }) => {
+const Lunch = ({ searchTerm, addToCart }) => {
   const filteredData = LunchMenu.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -22,7 +22,7 @@ const Lunch = ({ searchTerm }) => {
             <p className="stock">
               {item.stock > 1 ? `In stock (${item.stock})` : <span style={{color:'red'}}>Stock out</span>}
             </p>
-            <a href="#" className="btn">Order Now</a>
+            <button onClick={() => addToCart(item)} className="btn">Order Now</button>
           </div>
         </div>
       ))}
