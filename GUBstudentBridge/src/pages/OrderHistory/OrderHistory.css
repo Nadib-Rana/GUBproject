@@ -1,0 +1,24 @@
+/* Card hover effect */
+.hover-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Progress bar thin style */
+  .progress-thin {
+    height: 4px;
+  }
+  
+  /* Modal custom styles */
+  .order-details-modal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .order-details-modal .modal-footer {
+    border-top: none;
+  }
