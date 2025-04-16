@@ -1,3 +1,7 @@
+import Img1 from '../../assets/images/img1.jpeg';
+import Img2 from '../../assets/images/img2.jpeg';
+import Img3 from '../../assets/images/img3.jpeg';
+
 const data24h = [
   {
     id: 1,
@@ -6,7 +10,7 @@ const data24h = [
     price: 20,
     stock: 10,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1584270354949-bd6c55f50d6a'
+    image: Img1
   },
   {
     id: 2,
@@ -15,7 +19,7 @@ const data24h = [
     price: 30,
     stock: 5,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1584270354949-bd6c55f50d6a'
+    image: Img2
   },
   {
     id: 3,
@@ -24,7 +28,7 @@ const data24h = [
     price: 25,
     stock: 0,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1572441710263-70b5e7f59c7c'
+    image: Img3
   },
   {
     id: 4,
@@ -33,7 +37,7 @@ const data24h = [
     price: 35,
     stock: 8,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img2
   },
   {
     id: 5,
@@ -42,7 +46,7 @@ const data24h = [
     price: 20,
     stock: 15,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img1
   },
   {
     id: 6,
@@ -51,7 +55,7 @@ const data24h = [
     price: 25,
     stock: 10,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img2
   },
   {
     id: 7,
@@ -60,7 +64,7 @@ const data24h = [
     price: 30,
     stock: 7,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img3
   },
   {
     id: 8,
@@ -69,7 +73,7 @@ const data24h = [
     price: 30,
     stock: 12,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img1
   },
   {
     id: 9,
@@ -78,7 +82,7 @@ const data24h = [
     price: 15,
     stock: 20,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img2
   },
   {
     id: 10,
@@ -87,7 +91,7 @@ const data24h = [
     price: 25,
     stock: 10,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img3
   },
   {
     id: 11,
@@ -96,7 +100,7 @@ const data24h = [
     price: 30,
     stock: 9,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img1
   },
   {
     id: 12,
@@ -105,7 +109,7 @@ const data24h = [
     price: 20,
     stock: 14,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img2
   },
   {
     id: 13,
@@ -114,7 +118,7 @@ const data24h = [
     price: 30,
     stock: 6,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img3
   },
   {
     id: 14,
@@ -123,7 +127,7 @@ const data24h = [
     price: 40,
     stock: 5,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img1
   },
   {
     id: 15,
@@ -132,7 +136,7 @@ const data24h = [
     price: 30,
     stock: 8,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img1
   },
   {
     id: 16,
@@ -141,7 +145,7 @@ const data24h = [
     price: 35,
     stock: 7,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img1
   },
   {
     id: 17,
@@ -150,7 +154,7 @@ const data24h = [
     price: 25,
     stock: 10,
     provider: 'S<br />T',
-    image: 'https://images.unsplash.com/photo-1604908177522-3c3e1e3e3e3e'
+    image: Img3
   }
 ]
 export default data24h;
