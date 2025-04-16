@@ -29,7 +29,6 @@ const Lunch = ({ searchTerm, addToCart }) => {
           </div>
           <div className="card-body">
             <h3>{item.name}</h3>
-            <p>{item.description}</p>
             <p className="price">&#2547; <b>{item.price}</b></p>
             <p className="stock">
               {item.stock > 1 ? `In stock (${item.stock})` : <span style={{ color: 'red' }}>Stock out</span>}

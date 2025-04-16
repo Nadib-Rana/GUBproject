@@ -64,12 +64,16 @@ body {
   font-size: 18px !important;
   font-weight: bold !important;
   line-height: 1px !important;
+  margin-top: 15px !important;
+
 }
 
 .stock {
   color: #0dd42e !important;
   font-weight: bold !important;
   line-height: 1px !important;
+  margin: -5px !important;
+  
 }
 
 .btn {

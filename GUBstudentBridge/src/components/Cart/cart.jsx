@@ -36,8 +36,8 @@ export default function Cart({ cartItems, removeFromCart, incrementQuantity, dec
     console.log(JSON.stringify(newOrder, null, 2));
     alert("✅ Order placed! (Check console for mock file output)");
 
-    cartItems.forEach(item => removeFromCart(item.id));
-    setShowConfirmModal(false);
+    cartItems.forEach(item => removeFromCart(item.id)); // Remove items from cart
+    setShowConfirmModal(false); // Close confirmation modal
   };
 
   return (
@@ -47,9 +47,9 @@ export default function Cart({ cartItems, removeFromCart, incrementQuantity, dec
         {cartItems.length === 0 ? (
           <p className="text-center">Your cart is empty</p>
         ) : (
-          <div>
+          <div className="d-flex flex-wrap justify-content-between">
             {cartItems.map((item) => (
-              <div className="card shadow-lg p-2 mb-2 bg-white rounded text-center" key={item.id}>
+              <div className="card shadow-lg p-2 mb-2 bg-white rounded text-center" key={item.id} style={{ width: '16%' }}>
                 <div onClick={() => handleShow(item)} className="card-header" style={{ cursor: 'pointer' }}>
                   <h5 className="card-title fw-bold">{item.name}</h5>
                   <img className="card-img-top w-100" src={item.image} alt={item.name} />
@@ -72,8 +72,8 @@ export default function Cart({ cartItems, removeFromCart, incrementQuantity, dec
                 </div>
               </div>
             ))}
-            <h3 className="mt-4">Total Price: &#2547; {getTotalPrice()}</h3>
-            <button className="btn btn-primary mt-3" onClick={handleOrder}>Place Order</button>
+            <h3 className="mt-4 w-100 text-center">Total Price: &#2547; {getTotalPrice()}</h3>
+            <button className="btn btn-primary mt-3 d-block mx-auto" onClick={handleOrder}>Place Order</button>
           </div>
         )}
       </div>

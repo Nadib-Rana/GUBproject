@@ -9,6 +9,7 @@ const Home = () => {
       <Banner className="banner-paste" />
       <br />
       <Navigation2 className="navigation-paste" />
+      
     </div>
   );
 };
